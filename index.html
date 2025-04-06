@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ritvik Upadhyay | Portfolio</title>
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+
+  <!-- Animate.css for simple fade/zoom effects -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <style>
+    img {
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans">
+  <!-- Header -->
+  <header class="flex items-center justify-between p-6 shadow-sm bg-white dark:bg-gray-800">
+    <h1 class="text-xl font-bold">Ritvik Upadhyay | Portfolio</h1>
+    <nav class="space-x-6 text-sm">
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#projects" class="hover:text-blue-500">Projects</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+      <a href="Ritvik_Resume.pdf" download class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition text-sm">Download Resume</a>
+      <button id="theme-toggle" class="ml-2 text-xl">🌓</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-blue-100 to-white dark:from-gray-800 dark:to-gray-900">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-10">
+      <!-- Profile Image with Animation -->
+      <div class="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden shadow-lg border-4 border-white dark:border-gray-700 animate__animated animate__zoomIn">
+        <img src="image.jpg" alt="Ritvik" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Hero Text -->
+      <div class="text-center md:text-left max-w-xl animate__animated animate__fadeInUp animate__delay-1s">
+        <h2 class="text-4xl font-extrabold mb-4">Hi, I'm Ritvik 👋</h2>
+        <p class="text-lg mb-6">A passionate developer building cool projects with C#, .NET, Java, Spring Boot, Angular, and exploring the world of tech!</p>
+        <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition">
+          See My Work
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section (Centered) -->
+  <section id="about" class="py-20 bg-gray-100 dark:bg-gray-800 text-center">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-lg">
+        I’m a software developer with experience in .NET(C#), WPF and DB Systems like SQL, PostGres and Esent. I'm currently diving into Java and Spring Boot, aiming to constantly grow my skills. I love solving problems and creating useful tools for the web.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10 text-center">My Projects</h2>
+      <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Project 1 -->
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl transform hover:scale-105 transition duration-300 animate__animated animate__fadeInUp">
+          <h3 class="text-xl font-semibold mb-2">E-commerce website</h3>
+          <p>I created an e-commerce website using Angular for frontend, Java, SpringBoot and MySQL DB for Backend to understand the nuances of being a full stack developer, and the complexities that arise while creating and deploying a fully functional website.</p>
+        </div>
+        <!-- Project 2 -->
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow hover:shadow-xl transform hover:scale-105 transition duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+          <h3 class="text-xl font-semibold mb-2">NFHS Research Project</h3>
+          <p>As a part of my Data Mining course at BITS Pilani Hyderabad, I conducted a research project to analyze the temporal gender gaps and disparities in the education system across India using the NFHS dataset.</p>
+        </div>
+        <!-- Placeholder -->
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow flex items-center justify-center text-gray-400 italic animate__animated animate__fadeInUp animate__delay-2s">
+          More coming soon...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-100 dark:bg-gray-800 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+      <p>Feel free to reach out for collaborations or just a friendly hello 👋</p>
+      <p class="mt-4">Email: <a href="mailto:ritvik.upadhyay0163@gmail.com" class="text-blue-600 dark:text-blue-400">ritvik.upadhyay0163@gmail.com</a></p>
+      <p class="mt-4">LinkedIn: <a href="https://www.linkedin.com/in/ritvik-upadhyay-155382218/" target="_blank" rel="noopener noreferrer" class="inline-block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-blue-700 hover:text-blue-900 transition">
+          <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.3h.1c.53-1 1.83-2.3 3.76-2.3C20.13 8 21 10.15 21 13.24V24h-4v-9.35c0-2.24-.04-5.13-3.13-5.13-3.13 0-3.61 2.45-3.61 4.98V24h-4V8z"/>
+        </svg>
+      </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-white dark:bg-gray-900 text-sm text-gray-500 dark:text-gray-400">
+    © 2025 Ritvik Upadhyay. All rights reserved.
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+
+    if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark');
+    }
+
+    toggle.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      localStorage.theme = root.classList.contains('dark') ? 'dark' : 'light';
+    });
+  </script>
+</body>
+</html>
